@@ -61,7 +61,7 @@ Regular VACUUMing also prevents transaction ID wraparound by updating the pg_cla
 2. Multi-Version Concurrency Control (MVCC):
 	When rows are updated or deleted, MVCC keeps the older versions of the data for transaction consistency. VACUUM removes these old versions that are no longer needed.
 
-4. Importance of autovacuum:
+4. Importance of autovacuum: 
 	Highlight the role of the automatic autovacuum process in preventing performance degradation and wraparound issues without manual intervention.
 5. Parameters:
 	Mention key parameters that can be tuned for better performance, like vacuum_cost_delay (to reduce I/O impact) and vacuum_freeze_min_age (for freezing old tuples).
